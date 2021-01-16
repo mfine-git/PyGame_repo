@@ -1,19 +1,15 @@
 name: CI-CD Pipeline-to-AWS-Elastic_Beanstalk
 env:
   EB_PACKAGE_S3_BUCKET_NAME: "mfine-github-actions"
-  EB_APPLICATION_NAME: "PyGame_app"
-  EB_ENVIRONMENT_NAME: "PyGame_app-env"
-  DEPLOY_PACKAGE_NAME: "PyGame_app_${{ github.sha }}.zip"
-  AWS_REGION_NAME: "us-east-2"
- 
+  EB_APPLICATION_NAME      : "PyGame_app"
+  EB_ENVIRONMENT_NAME      : "PyGame_app-env"
+  DEPLOY_PACKAGE_NAME      : "PyGame_app_${{ github.sha }}.zip"
+  AWS_REGION_NAME          : "us-east-2"
+
 on:
   push:
-    branches:
+    branches: 
       - master
 jobs:
-  my_ci_part:
+  my_ci_par:
     runs-on: ubuntu-latest
-    
-    steps:
-       - name:  Git clone our repo  
-         uses:  actions/checkout@v1
