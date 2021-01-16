@@ -13,3 +13,7 @@ on:
 jobs:
   my_ci_par:
     runs-on: ubuntu-latest
+    
+    steps:
+      - name: Print finish message
+        run: echo "CI Finished succesfully !"  
