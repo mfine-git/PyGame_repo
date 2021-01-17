@@ -3,7 +3,7 @@ import random   # for random functions
 import sys
 import time
 
-#bg_color = green
+#bg_color = white
 MAX_X = 1366
 MAX_Y = 768
 MAX_SNOW = 100
@@ -69,7 +69,7 @@ def check_for_exit():
 
 pygame.init()
 screen = pygame.display.set_mode((MAX_X, MAX_Y), pygame.FULLSCREEN)
-bg_color = (0, 250, 0)
+bg_color = (250, 250, 250)
 snowfall = []
 
 initialize_snow(MAX_SNOW, snowfall)
