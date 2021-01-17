@@ -3,7 +3,8 @@ import random   # for random functions
 import sys
 import time
 
-MAX_X = 1366
+# new update
+MAX_X = 1365
 MAX_Y = 768
 MAX_SNOW = 100
 SNOW_SIZE = 40
